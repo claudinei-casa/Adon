@@ -1,4 +1,5 @@
 import { View } from './View.js'
+import { Emitter } from './Emitter.js'
 const Timer = {
     time: 5,
     currentTime: 0,
@@ -7,6 +8,7 @@ const Timer = {
     timeToSeconds: time => time % 60,
     formatTime: time => String(time).padStart(2, '0'),
     init(time) {
+        Emitter.emit('countdown-start')
         Timer.currentTime = time || 60 * 60
         Timer.interval = setInterval(Timer.countDown, 1000)
     },
@@ -14,6 +16,7 @@ const Timer = {
         Timer.currentTime = Timer.currentTime - 1
         if (Timer.currentTime === -1) {
             clearInterval(Timer.interval)
+            Emitter.emit('countdown-end')
             return;
         }
         Timer.refreshDisplayTimer()
