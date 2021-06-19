@@ -1,7 +1,7 @@
 import { View } from './View.js'
 import { Emitter } from './Emitter.js'
 const Timer = {
-    time: 5,
+    time: 60 * 60,
     currentTime: 0,
     interval: null,
     timeToMinutes: time => Math.floor(time / 60),
@@ -9,7 +9,8 @@ const Timer = {
     formatTime: time => String(time).padStart(2, '0'),
     init(time) {
         Emitter.emit('countdown-start')
-        Timer.currentTime = time || 60 * 60
+        Timer.time = time || Timer.time
+        Timer.currentTime = Timer.time
         Timer.interval = setInterval(Timer.countDown, 1000)
     },
     countDown() {
