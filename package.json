@@ -2,7 +2,7 @@
     "name": "Remember-to-Post",
     "version": "1.0.0",
     "description": "Olá, como um exercício pra relembrar alguns conceitos estou desenvolvendo um App pra ajudar a nós, esquecidos de plantão e lembrar de coisas como por exemplo aquele bolo que deixei assando e queimou porque comecei a codar.",
-    "main": "main.js",
+    "main": "electron/main.js",
     "scripts": {
         "start": "electron ."
     },
