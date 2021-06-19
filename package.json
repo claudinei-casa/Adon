@@ -1,0 +1,23 @@
+{
+    "name": "Remember-to-Post",
+    "version": "1.0.0",
+    "description": "Olá, como um exercício pra relembrar alguns conceitos estou desenvolvendo um App pra ajudar a nós, esquecidos de plantão e lembrar de coisas como por exemplo aquele bolo que deixei assando e queimou porque comecei a codar.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/claudinei-casa/Remember-to-Post.git"
+    },
+    "keywords": [],
+    "author": "Claudinei Casa",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/claudinei-casa/Remember-to-Post/issues"
+    },
+    "homepage": "https://github.com/claudinei-casa/Remember-to-Post#readme",
+    "devDependencies": {
+        "electron": "^13.1.2"
+    }
+}
