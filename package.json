@@ -1,10 +1,11 @@
 {
-    "name": "Remember-to-Post",
+    "name": "adon",
     "version": "1.0.0",
-    "description": "Olá, como um exercício pra relembrar alguns conceitos estou desenvolvendo um App pra ajudar a nós, esquecidos de plantão e lembrar de coisas como por exemplo aquele bolo que deixei assando e queimou porque comecei a codar.",
+    "description": "",
     "main": "electron/main.js",
     "scripts": {
-        "start": "electron ."
+        "start": "electron .",
+        "build": "npx electron-packager ."
     },
     "repository": {
         "type": "git",

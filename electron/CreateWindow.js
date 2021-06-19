@@ -7,10 +7,7 @@ function createWindow() {
         fullscreenable: false,
         frame: false,
         resizable: false,
-        show: true,
-
     })
-
     win.loadFile('index.html')
 
     return win
