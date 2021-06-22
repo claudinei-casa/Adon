@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adon</title>
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div id="timer">
-    </div>
+    <main>
+        <div id="title"></div>
+        <div id="timer">
+        </div>
+        <div>
+            <input id="imputtime" class="input" type="text" placeholder="Time">
+            <input id="inputtitle" class="input" placeholder="Title">
+        </div>
+        <div class="wrap">
+            <button id="start" class="button">Start</button>
+        </div>
+    </main>
     <script type="module">
         import { App } from './src/App.js'; App.start();
     </script>

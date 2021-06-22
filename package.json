@@ -20,5 +20,6 @@
     "homepage": "https://github.com/claudinei-casa/Remember-to-Post#readme",
     "devDependencies": {
         "electron": "^13.1.2"
-    }
+    },
+    "dependencies": {}
 }

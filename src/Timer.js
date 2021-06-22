@@ -1,5 +1,6 @@
-import { View } from './View.js'
+import { ViewTimer } from './View.js'
 import { Emitter } from './Emitter.js'
+import { Modify } from './Features.js'
 const Timer = {
     time: 60 * 60,
     currentTime: 0,
@@ -18,6 +19,7 @@ const Timer = {
         if (Timer.currentTime === -1) {
             clearInterval(Timer.interval)
             Emitter.emit('countdown-end')
+            location.reload()
             return;
         }
         Timer.refreshDisplayTimer()
@@ -26,7 +28,7 @@ const Timer = {
         let minutes = Timer.formatTime(Timer.timeToMinutes(Timer.currentTime))
         let seconds = Timer.formatTime(Timer.timeToSeconds(Timer.currentTime))
 
-        View.render({
+        ViewTimer.render({
             minutes,
             seconds,
         })
